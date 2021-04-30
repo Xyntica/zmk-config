@@ -3,11 +3,11 @@
  *
  * SPDX-License-Identifier: MIT
  */
-#define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
-#define UTIL    3
-#define GAME    4
+// #define DEFAULT 0
+// #define LOWER   1
+// #define RAISE   2
+// #define UTIL    3
+// #define GAME    4
 
 
 #include <behaviors.dtsi>
@@ -18,15 +18,15 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 //Layer definitions
-#define QWERTY 0
-#define COLEMAK 1
-#define RAISE 2
-#define LOWER 3
-#define AOE 4
-#define AOERAISE 5
-#define MINE 6
-#define MINERAISE 7
-#define ADJUST 8
+#define QWERTY		0
+#define COLEMAK 	1
+#define RAISE 		2
+#define LOWER 		3
+#define AOE 		4
+#define AOERAISE 	5
+#define MINE 		6
+#define MINERAISE 	7
+#define ADJUST 		8
 
 &left_encoder {
 	resolution = <2>;
@@ -64,9 +64,9 @@
 // |       |  Z  |  X  |  C   |  V   |  B   |         |         |  |         |         |  N   |  M    |  ,    |  .   |   /   | CAPS |
 //                     |      | TAB  |LWRESC|  SPACE  |         |  |         |SHFT/BKSP|RSEDEL| ENTER |       |
 			bindings = <
-	&none   &kp Q         &hm W         &kp E         &hm R         &hm T                           	/**/                    		&kp Y   		&kp U           &kp I           &kp O        &kp P       		&none
+	&none   &kp Q         &kp W         &kp E         &kp R         &kp T                           	/**/                    		&kp Y   		&kp U           &kp I           &kp O        &kp P       		&none
 	&none   &hm LGUI A    &hm LALT S    &hm LSHFT D   &hm LCTRL F   &kp G                           	/**/                    		&kp H   		&hm LCTRL J     &hm LSHFT K     &hm LALT L   &hm LGUI SEMI   	&kp SQT
-	&none   &hm Z	   	  &hm X         &hm C         &hm V         &hm B 	        &none		&none	/**/	&none	&none   		&kp N   		&kp M           &kp COMMA       &kp DOT      &kp FSLH       	&kp CAPS
+	&none   &kp Z	   	  &kp X         &kp C         &kp V         &kp B 	        &none		&none	/**/	&none	&none   		&kp N   		&kp M           &kp COMMA       &kp DOT      &kp FSLH       	&kp CAPS
 	                                    &none         &kp TAB       &lt LOWER ESC 	&kp SPACE	&none   /**/    &none   &mt LSHFT BSPC  &lt RAISE DEL   &kp ENTER       &none
 			>;
 
