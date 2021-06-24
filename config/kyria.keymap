@@ -20,12 +20,12 @@
 //Layer definitions
 #define QWERTY		0
 #define COLEMAK 	1
-#define RAISE 		2
-#define LOWER 		3
-#define AOE 		4
-#define AOERAISE 	5
-#define MINE 		6
-#define MINERAISE 	7
+#define MEDIA 		2
+#define NAV 		3
+#define MOUSE 		4
+#define SYMBOLS 	5
+#define NUM 		6
+#define FUNCTION	7
 #define ADJUST 		8
 
 &left_encoder {
@@ -64,10 +64,10 @@
 // |       |  Z  |  X  |  C   |  V   |  B   |         |         |  |         |         |  N   |  M    |  ,    |  .   |   /   | CAPS |
 //                     |      | TAB  |LWRESC|  SPACE  |         |  |         |SHFT/BKSP|RSEDEL| ENTER |       |
 			bindings = <
-	&none   &kp Q         &kp W         &kp E         &kp R         &kp T                           	/**/                    		&kp Y   		&kp U           &kp I           &kp O        &kp P       		&none
-	&none   &hm LGUI A    &hm LALT S    &hm LSHFT D   &hm LCTRL F   &kp G                           	/**/                    		&kp H   		&hm LCTRL J     &hm LSHFT K     &hm LALT L   &hm LGUI SEMI   	&kp SQT
-	&none   &kp Z	   	  &kp X         &kp C         &kp V         &kp B 	        &none		&none	/**/	&none	&none   		&kp N   		&kp M           &kp COMMA       &kp DOT      &kp FSLH       	&kp CAPS
-	                                    &none         &kp TAB       &lt LOWER ESC 	&kp SPACE	&none   /**/    &none   &mt LSHFT BSPC  &lt RAISE DEL   &kp ENTER       &none
+	&none	&kp Q			&kp W			&kp E			&kp R				&kp T 							/**/								&kp Y   		&kp U           &kp I           &kp O        &kp P       		&none
+	&none	&hm LGUI A		&hm LALT S		&hm LSHFT D		&hm LCTRL F			&kp G							/**/								&kp H   		&hm LCTRL J     &hm LSHFT K     &hm LALT L   &hm LGUI SEMI   	&kp SQT
+	&none	&kp Z			&kp X			&kp C			&kp V				&kp B			&none	&none	/**/	&none	&none				&kp N   		&kp M           &kp COMMA       &kp DOT      &kp FSLH       	&kp CAPS
+											&lt MEDIA ESC	&lt MEDIA SPACE     &lt MOUSE TAB	&none	&none	/**/	&none	&lt SYMBOLS ENTER	&lt NUM BSPC	&lt FUN DEL		&none
 			>;
 
 			sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
