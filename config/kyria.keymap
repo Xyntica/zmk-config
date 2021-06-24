@@ -94,9 +94,9 @@
 //                     | PLAY |      |ADJUST|         |         |  |         |         |      |       |       |
             bindings = <
     &none   &kp EXCL         &kp AT         &kp HASH           &kp DOLLAR      &kp PERCENT                    /**/                    &kp CARET   &kp AMPS   &kp STAR    &kp SEMI    &none       &none
-    &none   &hm_g LGUI F1    &hm_g LALT F2  &hm LSHFT F3       &hm LCTRL F4    &kp F5                         /**/                    &none       &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &none
+    &none   &hm_g LGUI F1    &hm LALT F2    &hm LSHFT F3       &hm LCTRL F4    &kp F5                         /**/                    &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   &none       &none
     &none   &kp F6           &kp F7         &kp F8             &kp F9          &kp F10       &none    &none   /**/    &none   &none   &none       &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &none
-                                            &kp C_PLAY_PAUSE   &trans          &mo ADJUST    &trans   &none   /**/    &none   &trans  &trans     &trans             &none
+                                            &kp C_PLAY_PAUSE   &trans          &mo ADJUST    &trans   &none   /**/    &none   &trans  &trans      &trans     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LC(Z) LC(Y)>;
@@ -125,7 +125,7 @@
 // | SG(S) |     |LEDTG|      |     |      |         |                      |         | COLEM| QWERTY|       |LEDTG |       |      |
 //                     |      |     |      |         |         |  |         |         |      |       |       |
             bindings = <
-    &bootloader     &none   &none                   &none           &none          &none                               /**/                     &none               &none           &none          &none               &none           &none
+    &bootloader     &none   &out OUT_TOG            &none           &none          &none                               /**/                     &none               &none           &none          &none               &none           &none
     &none           &none   &bt BT_CLR              &bt BT_SEL 1    &bt BT_SEL 2   &kp LG(LS(LEFT))                    /**/                     &kp LG(LS(RIGHT))   &kp LG(LEFT)    &kp LG(DOWN)   &kp LG(UP)          &kp LG(RIGHT)   &none
     &kp LG(LS(S))   &none   &ext_power EP_TOG       &none           &none          &none              &none    &none   /**/   &none   &none     &to COLEMAK         &to QWERTY      &to GAME       &ext_power EP_TOG   &none           &none
                                                     &none           &trans         &trans             &trans   &none   /**/   &none   &trans    &trans              &trans          &none
