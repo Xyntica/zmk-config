@@ -189,7 +189,18 @@
     &none   &kp F1     &kp F2    &kp F3     &kp F4      &kp F5                             /**/                    &none    &none           &none         &none       &none   &none
     &none   &kp F6     &kp F7    &kp F8     &kp F9      &kp F10                            /**/                    &none    &kp LCTRL       &kp LSHIFT    &kp LALT    &none   &none
     &none   &kp F11    &kp F12   &kp F13    &kp F14     &kp F14         &none      &none   /**/   &none   &none    &none    &none           &none         &none       &none   &none
-                                 &none      &none       &kp SPACE       &kp TAB    &none   /**/   &none   &none    &none    &none           &none
+                                 &none      &none       &kp LT          &kp GT     &none   /**/   &none   &none    &none    &none           &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
+        };
+        
+        sym34 {
+            bindings = <
+    &none   &kp DOLLAR &kp PLUS  &kp MINUS  &kp UNDER   &kp QMARK                          /**/                    &kp BSLH    &kp GRAVE &kp DQT    &kp APOS    &kp HASH    &none         
+    &none   &kp AT     &kp LBKT  &kp LBRC   &kp LPAR    &kp EXCL                           /**/                    &kp FSLH    &kp DOT   &kp COLON  &kp EQUAL   &kp PIPE    &none        
+    &none   &kp TIDLE  &kp RBKT  &kp RBRC   &kp RPAR    &kp CARET       &none      &none   /**/   &none   &none    &kp PERCENT &kp COMMA &kp SEMI   &kp STAR    &kp AMPS    &none        
+                                 &none      &none       &kp SPACE       &kp TAB    &none   /**/   &none   &none    &none       &none     &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
