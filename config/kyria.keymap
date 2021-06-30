@@ -25,6 +25,10 @@
 #define ADJUST      4
 #define GAME        5
 #define FUN         6
+#define NAV34       7
+#define NUM34       8
+#define FUN34       9
+#define SYM34       10
 
 &left_encoder {
     resolution = <2>;
@@ -62,10 +66,10 @@
 // |       |  Z  |  X  |  C   |  V   |  B   |         |         |  |         |         |  N   |  M    |  ,    |  .   |   /   | CAPS |
 //                     |      | TAB  |LWRESC|  SPACE  |         |  |         |SHFT/BKSP|RSEDEL| ENTER |       |
             bindings = <
-    &none   &kp Q         &kp W         &kp E         &kp R         &kp T                                /**/                            &kp Y           &kp U           &kp I           &kp O        &kp P             &none
-    &none   &hm_g LGUI A  &hm_g LALT S  &hm LSHFT D   &hm LCTRL F   &kp G                                /**/                            &kp H           &hm LCTRL J     &hm LSHFT K     &hm_g LALT L &hm_g LGUI SEMI   &kp SQT
-    &none   &kp Z         &kp X         &kp C         &kp V         &kp B            &none       &none   /**/    &none   &none           &kp N           &kp M           &kp COMMA       &kp DOT      &kp FSLH          &kp CAPS
-                                        &none         &kp TAB       &lt LOWER ESC    &kp SPACE   &none   /**/    &none   &mt LSHFT BSPC  &lt RAISE DEL   &kp ENTER       &none
+    &none   &kp Q         &kp W         &kp E         &kp R         &kp T                                     /**/                            &kp Y           &kp U           &kp I           &kp O        &kp P             &none
+    &none   &hm_g LGUI A  &hm_g LALT S  &hm LSHFT D   &hm LCTRL F   &kp G                                     /**/                            &kp H           &hm LCTRL J     &hm LSHFT K     &hm_g LALT L &hm_g LGUI SEMI   &kp SQT
+    &none   &kp Z         &kp X         &kp C         &kp V         &kp B           &none             &none   /**/    &none   &none           &kp N           &kp M           &kp COMMA       &kp DOT      &kp FSLH          &kp CAPS
+                                        &none         &kp TAB       &mo NAV34       &lt NUM34 SPACE   &none   /**/    &none   &lt FUN34 BSPC  &lt SYM34 DEL   &kp ENTER       &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
