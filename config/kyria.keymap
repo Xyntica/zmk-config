@@ -49,7 +49,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_ALT_GUI";
             #binding-cells = <2>;
-            tapping-term-ms = <800>;
+            tapping-term-ms = <600>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
