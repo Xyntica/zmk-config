@@ -258,5 +258,5 @@
 
 //             sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
 //         };
-//     };
+     };
 };
