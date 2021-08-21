@@ -85,7 +85,7 @@
     //         bindings = <&kp LEFT>;
     //         slow-release = <true>;
     //     };
-    };
+    // };
 
     keymap {
         compatible = "zmk,keymap";
