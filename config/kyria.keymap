@@ -51,23 +51,23 @@
         compatible = "zmk,combos";
         combo_up {
             timeout-ms = <50>;
-            key-positions = <17 18>;
+            key-positions = <16 17>;
             bindings = <&kp UP>;
             // slow-release = <true>;
         };
         combo_down {
             timeout-ms = <50>;
-            key-positions = <29 30>;
+            key-positions = <28 29>;
             bindings = <&kp DOWN>;
         };
         combo_right {
             timeout-ms = <50>;
-            key-positions = <18 30>;
+            key-positions = <17 29>;
             bindings = <&kp RIGHT>;
         };
         combo_left {
             timeout-ms = <50>;
-            key-positions = <17 29>;
+            key-positions = <16 28>;
             bindings = <&kp LEFT>;
         };
     };
