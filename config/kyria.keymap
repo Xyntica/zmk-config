@@ -14,8 +14,6 @@
 //Layer definitions
 #define QWERTY      0
 #define COLEMAK     1
-// #define RAISE       2
-// #define LOWER       3
 #define ADJUST      2
 #define GAME        3
 #define FUN34       4
@@ -82,7 +80,7 @@
 &none   &kp Q         &kp W         &kp E         &kp R         &kp T                                            /**/                               &kp Y           &kp U           &kp I           &kp O        &kp P             &kp RA(W)
 &none   &hm_g LGUI A  &hm_g LALT S  &hm LSHFT D   &hm LCTRL F   &kp G                                            /**/                               &kp H           &hm LCTRL J     &hm LSHFT K     &hm_g LALT L &hm_g LGUI SEMI   &kp SQT
 &none   &kp Z         &kp X         &kp C         &kp V         &kp B           &none             &mo ADJUST     /**/    &mo ADJUST &none           &kp N           &kp M           &kp COMMA       &kp DOT      &kp FSLH          &kp CAPS
-                                    &kp K_MUTE    &none         &lt NUM34 ESC   &lt NAV34 SPACE   &lt FUN34 TAB  /**/    &kp ENTER  &lt FUN34 BSPC  &lt SYM34 DEL   &kp ENTER       &none
+                                    &kp C_MUTE    &none         &lt NUM34 ESC   &lt NAV34 SPACE   &lt FUN34 TAB  /**/    &kp ENTER  &lt FUN34 BSPC  &lt SYM34 DEL   &kp ENTER       &none
             >;
             sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
         };
@@ -92,7 +90,7 @@
 &none   &kp Q         &hm LC(W) W   &kp F         &kp P         &kp G                                     /**/                                &kp J           &kp L           &kp U           &kp Y        &kp SEMI       &none
 &none   &hm_g LGUI A  &hm_g LALT R  &hm LSHFT S   &hm LCTRL T   &kp D                                     /**/                                &kp H           &hm LCTRL N     &hm LSHFT E     &hm_g LALT I &hm_g LGUI O   &kp SQT
 &none   &hm LC(Z) Z   &hm LC(X) X   &hm LC(C) C   &hm LC(V) V   &hm LC(B) B      &none        &mo ADJUST  /**/    &mo ADJUST  &none           &kp K           &kp M           &kp COMMA       &kp DOT      &kp FSLH       &kp CAPS
-                                    &none         &kp TAB       &lt LOWER ESC    &kp SPACE    &none       /**/    &none       &mt LSHFT BSPC  &lt RAISE DEL   &kp ENTER       &none
+                                    &none         &kp TAB       &lt NUM34 ESC    &kp SPACE    &none       /**/    &none       &mt LSHFT BSPC  &lt SYM34 DEL   &kp ENTER       &none
             >;
             sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
         };
@@ -132,7 +130,7 @@
 &kp TAB    &kp Q    &kp W   &kp E     &kp R     &kp T                                  /**/                               &kp Y           &kp U           &kp I           &kp O        &kp P             &none
 &kp LSHIFT &kp A    &kp S   &kp D     &kp F     &kp G                                  /**/                               &kp H           &kp J           &kp K           &kp L        &kp SEMI          &kp SQT
 &kp LCTRL  &kp Z    &kp X   &kp C     &kp V     &kp B           &none      &mo ADJUST  /**/   &mo ADJUST  &none           &kp N           &kp M           &kp COMMA       &kp DOT      &kp FSLH          &kp CAPS
-                            &none     &kp LALT  &kp LCTRL       &kp SPACE  &none       /**/   &none       &mt LSHFT BSPC  &lt RAISE DEL   &kp ENTER       &none
+                            &none     &kp LALT  &kp LCTRL       &kp SPACE  &none       /**/   &none       &mt LSHFT BSPC  &lt SYM34 DEL   &kp ENTER       &none
             >;
             sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
         };
@@ -171,8 +169,8 @@
         num34 {
             bindings = <
 &none   &none       &kp N7   &kp N8     &kp N9      &kp PERCENT                         /**/                        &kp STAR        &kp N7    &kp N8   &kp N9   &kp UNDER  &none
-&none   &kp ESC     &kp N4   &kp N5     &kp N6      &kp DELETE                          /**/                        &kp BSLH        &kp N4    &kp N5   &kp N6   &kp DOT    &none
-&none   &kp K_UNDO  &kp N1   &kp N2     &kp N3      &none           &none      &none    /**/   &none   &none        &kp MINUS       &kp N1    &kp N2   &kp N3   &kp COMMA  &none
+&none   &kp N0      &kp N1   &kp N2     &kp N3      &kp DELETE                          /**/                        &kp BSLH        &kp N4    &kp N5   &kp N6   &kp DOT    &none1
+&none   &kp K_UNDO  &kp N4   &kp N5     &kp N6      &none           &none      &none    /**/   &none   &none        &kp MINUS       &kp N1    &kp N2   &kp N3   &kp COMMA  &none
                              &none      &none       &kp DOT         &kp N0     &kp TAB  /**/   &none   &kp SPACE    &kp PLUS        &kp N0    &none
             >;
             sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
