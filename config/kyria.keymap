@@ -16,6 +16,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/combos.h>
 
 //Layer definitions
 #define QWERTY      0
@@ -56,36 +57,36 @@
         };
     };
     
-    // combos {
-    //     compatible = "zmk,combos";
-    //     combo_up {
-    //         timeout-ms = <50>;
-    //         key-positions = <17 18>;
-    //         bindings = <&kp UP>;
-    //         slow-release = <true>;
-    //     };
+    combos {
+        compatible = "zmk,combos";
+        combo_up {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp UP>;
+            slow-release = <true>;
+        };
 
-    //     combo_down {
-    //         timeout-ms = <50>;
-    //         key-positions = <29 30>;
-    //         bindings = <&kp DOWN>;
-    //         slow-release = <true>;
-    //     };
+        combo_down {
+            timeout-ms = <50>;
+            key-positions = <29 30>;
+            bindings = <&kp DOWN>;
+            slow-release = <true>;
+        };
         
-    //     combo_right {
-    //         timeout-ms = <50>;
-    //         key-positions = <18 30>;
-    //         bindings = <&kp RIGHT>;
-    //         slow-release = <true>;
-    //     };
+        combo_right {
+            timeout-ms = <50>;
+            key-positions = <18 30>;
+            bindings = <&kp RIGHT>;
+            slow-release = <true>;
+        };
         
-    //     combo_left {
-    //         timeout-ms = <50>;
-    //         key-positions = <17 29>;
-    //         bindings = <&kp LEFT>;
-    //         slow-release = <true>;
-    //     };
-    // };
+        combo_left {
+            timeout-ms = <50>;
+            key-positions = <17 29>;
+            bindings = <&kp LEFT>;
+            slow-release = <true>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
