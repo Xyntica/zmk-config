@@ -56,33 +56,33 @@
         };
     };
     
-    // combos {
-    //     compatible = "zmk,combos";
-    //     combo_up {
-    //         timeout-ms = <50>;
-    //         key-positions = <17 18>;
-    //         bindings = <&kp UP>;
-    //     };
+    combos {
+        compatible = "zmk,combos";
+        combo_up {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp UP>;
+        };
 
-    //     combo_down {
-    //         timeout-ms = <50>;
-    //         key-positions = <29 30>;
-    //         bindings = <&kp DOWN>;
-    //     };
+        combo_down {
+            timeout-ms = <50>;
+            key-positions = <29 30>;
+            bindings = <&kp DOWN>;
+        };
         
-    //     combo_right {
-    //         timeout-ms = <50>;
-    //         key-positions = <18 30>;
-    //         bindings = <&kp RIGHT>;
-    //     };
+        combo_right {
+            timeout-ms = <50>;
+            key-positions = <18 30>;
+            bindings = <&kp RIGHT>;
+        };
         
-    //     combo_left {
-    //         timeout-ms = <50>;
-    //         key-positions = <17 29>;
-    //         bindings = <&kp LEFT>;
-    //         slow-release = <1000>;
-    //     };
-    // };
+        combo_left {
+            timeout-ms = <50>;
+            key-positions = <17 29>;
+            bindings = <&kp LEFT>;
+            slow-release = <1000>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -167,43 +167,43 @@
             sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
         };
 
-//         game {
-// // ---------------------------------------------------------------------------------------------------------------------------------
-// // |       |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |      |
-// // |       |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
-// // |       |  Z  |  X  |  C   |  V   |  B   |         |         |  |         |         |  N   |  M    |  ,    |  .   |   /   | CAPS |
-// //                     |      | TAB  |LWRESC|  SPACE  |         |  |         |SHFT/BKSP|RSEDEL| ENTER |       |
-//             bindings = <
-//     &kp TAB    &kp Q    &kp W   &kp E     &kp R     &kp T                              /**/                           &kp Y           &kp U           &kp I           &kp O        &kp P             &none
-//     &kp LSHIFT &kp A    &kp S   &kp D     &kp F     &kp G                              /**/                           &kp H           &kp J           &kp K           &kp L        &kp SEMI          &kp SQT
-//     &kp LCTRL  &kp Z    &kp X   &kp C     &kp V     &kp B           &none      &none   /**/   &none   &none           &kp N           &kp M           &kp COMMA       &kp DOT      &kp FSLH          &kp CAPS
-//                                 &none     &kp LALT  &kp LCTRL       &kp SPACE  &none   /**/   &none   &mt LSHFT BSPC  &lt RAISE DEL   &kp ENTER       &none
-//             >;
+        game {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |       |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |      |
+// |       |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+// |       |  Z  |  X  |  C   |  V   |  B   |         |         |  |         |         |  N   |  M    |  ,    |  .   |   /   | CAPS |
+//                     |      | TAB  |LWRESC|  SPACE  |         |  |         |SHFT/BKSP|RSEDEL| ENTER |       |
+            bindings = <
+    &kp TAB    &kp Q    &kp W   &kp E     &kp R     &kp T                              /**/                           &kp Y           &kp U           &kp I           &kp O        &kp P             &none
+    &kp LSHIFT &kp A    &kp S   &kp D     &kp F     &kp G                              /**/                           &kp H           &kp J           &kp K           &kp L        &kp SEMI          &kp SQT
+    &kp LCTRL  &kp Z    &kp X   &kp C     &kp V     &kp B           &none      &none   /**/   &none   &none           &kp N           &kp M           &kp COMMA       &kp DOT      &kp FSLH          &kp CAPS
+                                &none     &kp LALT  &kp LCTRL       &kp SPACE  &none   /**/   &none   &mt LSHFT BSPC  &lt RAISE DEL   &kp ENTER       &none
+            >;
 
-//             sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
-//         };
+            sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
+        };
         
-//         myfun {
-//             bindings = <
-//     &none   &kp F12    &kp F7   &kp F8     &kp F9     &kp PRINTSCREEN                    /**/                    &none    &none           &none         &none       &none   &none
-//     &none   &kp F11    &kp F4   &kp F5     &kp F6     &kp SCROLLLOCK                     /**/                    &none    &kp LCTRL       &kp LSHIFT    &kp LALT    &none   &none
-//     &none   &kp F10    &kp F1   &kp F2     &kp F3     &kp PAUSE_BREAK &none      &none   /**/   &none   &none    &none    &none           &none         &none       &none   &none
-//                                 &none      &none      &kp ESC         &kp SPACE  &kp TAB /**/   &none   &none    &none    &none           &none
-//             >;
+        myfun {
+            bindings = <
+    &none   &kp F12    &kp F7   &kp F8     &kp F9     &kp PRINTSCREEN                    /**/                    &none    &none           &none         &none       &none   &none
+    &none   &kp F11    &kp F4   &kp F5     &kp F6     &kp SCROLLLOCK                     /**/                    &none    &kp LCTRL       &kp LSHIFT    &kp LALT    &none   &none
+    &none   &kp F10    &kp F1   &kp F2     &kp F3     &kp PAUSE_BREAK &none      &none   /**/   &none   &none    &none    &none           &none         &none       &none   &none
+                                &none      &none      &kp ESC         &kp SPACE  &kp TAB /**/   &none   &none    &none    &none           &none
+            >;
 
-//             sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
-//         };
+            sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
+        };
         
-//         nav34 {
-//             bindings = <
-//     &none   &kp PAGE_UP    &kp HOME   &kp UP      &kp END      &kp INSERT                       /**/                     &kp K_UNDO  &kp K_CUT   &kp K_COPY   &kp K_PASTE  &kp K_REDO &none
-//     &none   &kp PAGE_DOWN  &kp LEFT   &kp DOWN    &kp RIGHT    &kp DELETE                       /**/                     &none       &kp RCTRL   &kp RSHIFT   &kp RALT     &kp RGUI   &none
-//     &none   &kp K_UNDO     &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO   &none      &none    /**/    &none   &none    &none       &none       &none        &none        &none      &none
-//                                       &none       &none        &kp ESC      &kp SPACE  &kp TAB  /**/    &none   &none    &none       &none       &none
-//             >;
+    //     nav34 {
+    //         bindings = <
+    // &none   &kp PAGE_UP    &kp HOME   &kp UP      &kp END      &kp INSERT                       /**/                     &kp K_UNDO  &kp K_CUT   &kp K_COPY   &kp K_PASTE  &kp K_REDO &none
+    // &none   &kp PAGE_DOWN  &kp LEFT   &kp DOWN    &kp RIGHT    &kp DELETE                       /**/                     &none       &kp RCTRL   &kp RSHIFT   &kp RALT     &kp RGUI   &none
+    // &none   &kp K_UNDO     &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO   &none      &none    /**/    &none   &none    &none       &none       &none        &none        &none      &none
+    //                                   &none       &none        &kp ESC      &kp SPACE  &kp TAB  /**/    &none   &none    &none       &none       &none
+    //         >;
 
-//             sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
-//         };
+    //         sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LC(Z) LC(Y)>;
+    //     };
 
 //     //             nav34 {
 //     //         bindings = <
