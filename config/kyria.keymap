@@ -69,12 +69,11 @@
         //     bindings = <&kp DOWN>;
         //     slow-release = <true>;
         // };
-        // combo_right {
-        //     timeout-ms = <50>;
-        //     key-positions = <18 30>;
-        //     bindings = <&kp RIGHT>;
-        //     slow-release = <true>;
-        // };
+        combo_right {
+            timeout-ms = <50>;
+            key-positions = <18 30>;
+            bindings = <&kp RIGHT>;
+        };
         // combo_left {
         //     timeout-ms = <50>;
         //     key-positions = <17 29>;
